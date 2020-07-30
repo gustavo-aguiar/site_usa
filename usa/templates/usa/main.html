@@ -1,0 +1,50 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>HUPI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    </head>
+    <body>
+        <div id="page-container">
+          <div id="content-wrap">
+        
+        {% block content %}
+
+        {% endblock %}
+          </div>
+  </div>
+  <footer id="footer">
+      <div class="container-fluid">
+        <div class="menu-rights">
+          <div class="col-md-12">
+            
+            <ul class="social-media pull-right ">
+              <li>
+                <a href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=5548999951052" target="_blank" app-href="fb://profile/427788067570834">
+                  <img class="img-responsive" src="{% static 'images/whatsapp-logo-1d7da54a716b67a60bf3db38f3c54dea8112efdeef9a015e5af08e2d252469af.png' %}">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/hupiconstrutora/" target="_blank" app-href="whatsapp://send?1=pt_BR&amp;phone=5548999951052">
+                   <img class="img-responsive" src="{% static 'images/facebook-logo-36511618e6ae3e7cbfc685e4bd9c82a15f25d585916914137f0b854315bf8765.png' %}">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/hupiconstrutora/" target="_blank">
+                  <img class="img-responsive" src="{% static 'images/instagram-logo-9144201e7a9c294a94e7633b3d71d2c17c221a98e8241c66d5eff02e92da2ed4.png' %}">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</html>

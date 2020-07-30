@@ -1,0 +1,58 @@
+{% extends 'usa/main.html' %}
+{% load static %}
+
+
+{% block content %}
+{% include 'usa/navbar_cinza.html' %}
+<div class="container-fluid">
+    <div class="card border-0 shadow my-5" style="max-width: 36rem; margin:0 auto;">
+      <div class="card-body">
+        <img class="img-fluid" src="{% static 'images/logo_hupi-ingles-cinza.png' %}">
+        <div id="hupi">
+        <h3 class="card-title" style="margin-top: 4rem;">About Hupi</h3>
+        <p class="card-text" style="max-width: 31rem;">Founded in 2016, Hupi is starting its operations in the area of 3D printing of houses, focused on rapid and quality development, aimed at the low-income public;</p>
+        <p class="card-text" style="max-width: 36rem;">We believe that people with a low income also have the right to a beautiful and comfortable home;</p>
+        <p class="card-text" style="max-width: 32rem;">We have a wide experience in real estate development, adding up 573 000 m² built and more than 4 320 apartments delivered in the last 10 years in Brazil and in Paraguay.</p>
+        <p class="card-text" style="max-width: 36rem;">Purpose: Deliver decent, beautiful and affordable houses.</p>
+        <p class="card-text" style="max-width: 32rem;">Mission: To be the best real estate developer in Latin América in 10 years.</p>
+        </div>
+        <div id="location">
+            <div class="media justify-content-center" style="margin-left: 214px;max-width: 32rem;">
+                <div class="media-left">
+                  <a>
+                    <img class="media-object img-fluid" style="height: 18px;" src="{% static 'images/icon_location.png' %}">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h6 class="media-heading">Locations</h6>
+                </div>
+              </div>
+            <div class="cart-text" style="text-align: center; line-height: 0;margin-top: 1rem;">
+            <p class="card-text">BRAZIL</p>
+            <p class="card-text">Av. Santos Dumont, 1665| Criciúma SC</p>
+            <p class="card-text">Tel: +55 47 9 97004835 | www.hupi.com.br</p>
+            </div>
+        </div>
+        <div id="location">
+            <p class="card-text" style="text-align: center;margin-top: 2rem;line-height: 0;">PARAGUAY</p>
+            <div class="cart-text" style="text-align: center; line-height: 0;">
+            <p class="card-text">Av. San Martín esq.</p>
+            <p class="card-text">Austria , Ed. Sky Center, puerta 301 | Asunción</p>
+            <p class="card-text">Tel: +595 983 373 892 | www.hupi.com.py</p>
+            </div>
+        </div>
+        <div id="location">
+            <p class="card-text" style="text-align: center;margin-top: 2rem;line-height: 0;">BOLÍVIA</p>
+            <div class="cart-text" style="text-align: center; line-height: 0;">
+            <p class="card-text">Calle Los Gomeros</p>
+            <p class="card-text">No. 111 - Piso 1 - Oficina 4 | Santa Cruz de la Sierra</p>
+            <p class="card-text">www.hupi.com.bo</p>
+            </div>
+        </div>
+        <div style="height: auto"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+{% endblock %}

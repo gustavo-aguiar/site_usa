@@ -1,0 +1,23 @@
+{% extends 'usa/main.html' %}
+{% load static %}
+
+
+{% block content %}
+{% include 'usa/navbar_cinza.html' %}
+
+<div style="margin-top: 60px;">
+<h2 style="margin-left: 300px;">About Winsun</h2>
+</div>
+<img class="img-fluid" style="width: 100vw; height: 35%;" src="{% static 'images/winsun.jpeg' %}">
+<div class="container-fluid">
+    <div class="card border-0" style="max-width: 36rem; margin:0 auto;margin-top: 0rem !important;">
+      <div id=winsun class="card-body">
+        <h2 class="card-body">Experience Winsun</h2>
+        <p class="card-body" style="margin-bottom: -1.5rem;">Specializing in 3D architectural printing and the production of new materials for more than 16 years, being the first high tech company to achieve 3D printing of houses; </p>
+        <p class="card-body">It currently holds 151 national in China and has developed materials for 3D printing technology, such as special fiberglass reinforced cement and 3D building printing ink.</p>
+        <div style="height: auto"></div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
